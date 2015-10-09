@@ -63,6 +63,9 @@
                         <a class="page-scroll" href="#services">SERVICES</a>
                     </li>
                     <li>
+                        <a href="<?php echo site_url('home/job_request')?>">JOB</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#portfolio">BUY/SELL</a>
                     </li>
                     <li>
@@ -105,7 +108,7 @@
                         </div>
                     </p>
                     <p class="text-faded text-left">All the above factors pose great challenges in hiring the right candidate for your requirement. We can help you by understanding precisely your requirements and sourcing the right candidate for the job.</p>
-                    <a href="javascript:void(0)" class="btn btn-default btn-xl">Get Started!</a>
+                    <a href="<?php echo site_url('home/user_request')?>"class="btn btn-default btn-xl">Get Started!</a>
                 </div>
             </div>
         </div>
