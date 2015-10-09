@@ -1154,7 +1154,7 @@ INSERT INTO `isalon_jobs` (`jobs_id`, `jobs_client`, `jobs_user`, `jobs_name`, `
 -- Table structure for table `isalon_job_info`
 --
 
-CREATE TABLE IF NOT EXISTS `isalon_job_info` (
+CREATE TABLE IF NOT EXISTS `isalon_job_resource` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `phone` varchar(50) NOT NULL,
@@ -1170,7 +1170,7 @@ CREATE TABLE IF NOT EXISTS `isalon_job_info` (
 -- Dumping data for table `isalon_job_info`
 --
 
-INSERT INTO `isalon_job_info` (`id`, `name`, `phone`, `email`, `position`, `locality`, `prefered_type`, `salary`) VALUES
+INSERT INTO `isalon_job_resource` (`id`, `name`, `phone`, `email`, `position`, `locality`, `prefered_type`, `salary`) VALUES
 (31, 'lavu', '1234567890', 'lavu@gmail.com', '3', 'tvm', '1', 20000),
 (32, 'jiya', '1234567890', 'jiya@gmail.com', '1', 'tvm', '1', 40000),
 (33, 'jiya', '1234567890', 'jiya@gmail.com', '1', 'tvm', '1', 40000);

@@ -2,7 +2,7 @@
 
 class job_request_model extends CI_Model{
     private $__table = 'isalon_staff_requirement';
-    private $__table_sub = 'isalon_job_info';
+    private $__table_sub = 'isalon_job_resource';
     
     
     public function __construct()
