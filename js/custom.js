@@ -1,5 +1,4 @@
-
- $(".btnSend").click(function(){
+$(".btnSend").click(function(){
         $('#staff_form').bootstrapValidator({container: 'tooltip',
         feedbackIcons: {valid: 'icon icon-material-done',invalid: 'icon icon-material-close',validating: 'glyphicon glyphicon-refresh'},
         fields: {
@@ -33,7 +32,6 @@
             }
                       
     }).on('success.form.bv', function(e) {
-            sweetAlert("Success!", "Your Staff Requirement Form send successfully.", "success"); 
             e.preventDefault();
             var $form = $(e.target);
             var bv = $form.data('bootstrapValidator');            
@@ -49,21 +47,29 @@
                         values[field.name] = field.value;
                     });
                     send_data=values;
-                    $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_staffrequest' , data: send_data }).done(function( msg ) {
-                    $('#cn_details').val("");
-                    $('#salon_name').val("");
-                    $('#address').val("");
-                    $('#business_type').val("");
-                    $('#p_description').val("");
-                    $('#date').val("");
-                    $('#additional_detail').val("");
-                                                     
-                     });
-                    console.log(JSON.stringify(values));
+                    if ($form.data('submitted') === true) {
+                      e.preventDefault();
+                    } 
+                    else {
+                        $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_staffrequest' , data: send_data }).done(function( msg ) {
+                        sweetAlert("Success!", "Your Staff Requirement Form submitted successfully.", "success"); 
+                        console.log(JSON.stringify(values));
+                        $('#cn_details').val("");
+                        $('#salon_name').val("");
+                        $('#address').val("");
+                        $('#business_type').val("");
+                        $('#p_description').val("");
+                        $('#date').val("");
+                        $('#additional_detail').val("");                                                        
+                        });
+                      $form.data('submitted', true);
+                    }
+                   
         });                                                         
                 
          
 })
+ 
 
 $(".job_submit").click(function(){
         $('#job_form').bootstrapValidator({container: 'tooltip',
@@ -108,27 +114,43 @@ $(".job_submit").click(function(){
             }
             }           
     }).on('success.form.bv', function(e) {
-            sweetAlert("Success!", "Your Salon Job submitted successfully.", "success"); 
             e.preventDefault();
             var $form = $(e.target);
-            var bv = $form.data('bootstrapValidator');            
+            var bv = $form.data('bootstrapValidator'); 
             var $inputs = $('job_form :input');
+
                     var values = {};
                     $inputs.each(function() {
                         values[this.name] = $(this).val();
                         console.log(values[this.name] + '=' + $(this).val())
                     });
-                    var values = {};
+
+                     var values = {};
                     $.each($('.job_form').serializeArray(), function(i, field) {
                         console.log(field.name);
                         values[field.name] = field.value;
                     });
                     send_data=values;
-                    $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_jobrequest' , data: send_data }).done(function( msg ) {
-                                                         
-                     });
-                    console.log(JSON.stringify(values));
+
+                if ($form.data('submitted') === true) {
+                      e.preventDefault();
+                    } 
+                else {
+                        $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_jobrequest' , data: send_data }).done(function( msg ) {
+                        if(msg=='1')
+                        console.log(JSON.stringify(values));
+                        sweetAlert("Success!", "Your Job Request submitted Successfully.", "success");
+                        });
+                      $form.data('submitted', true);
+                    }
+                           
         });                                                         
                 
          
 })
+
+$('#date').datepicker({
+format: "dd/mm/yyyy"
+ });  
+            
+          

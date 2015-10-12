@@ -57,6 +57,7 @@ public function job_request()
 
                     );
                     $result = $this->job_model->add_jobsrequest($data);
+                     echo $result;
 
     } 
     

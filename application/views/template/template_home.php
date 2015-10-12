@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="<?php print base_url()?>/assets/css/animate.min.css" type="text/css">
     <link rel="stylesheet" href="<?php print base_url()?>/assets/lib/sweet/sweet-alert.css" type="text/css">
 
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php print base_url()?>/assets/css/creative.css" type="text/css">
 
@@ -114,8 +113,9 @@ window.isalon.base_url= '<?php echo base_url(); ?>';
     <!-- jQuery -->
     <script src="<?php print base_url()?>assets/js/jquery.js"></script>
     <script src="<?php print base_url()?>assets/lib/bootstrapValidator.js"></script>
+    <script src="<?php print base_url()?>assets/js/bootstrap-datepicker.js"></script>
     <script src="<?php print base_url()?>assets/lib/sweet/sweet-alert.min.js"></script>
-
+ 
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php print base_url()?>assets/js/bootstrap.min.js"></script>
 
@@ -125,9 +125,11 @@ window.isalon.base_url= '<?php echo base_url(); ?>';
     <script src="<?php print base_url()?>assets/js/wow.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
+
     <script src="<?php print base_url()?>assets/js/creative.js"></script>
     <script src="<?php print base_url()?>js/custom.js"></script>
-
+   
+  
 </body>
 
 </html>
