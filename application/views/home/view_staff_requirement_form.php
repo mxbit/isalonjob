@@ -53,6 +53,7 @@
 
                <div style="margin-right: 430px;margin-left: 145px;font-size: 22px;">
                 Staffing Requirement Details</div>
+                <h5 style="margin-left:14%">[ Title, No. of Positions, Gender, Yrs of Exp, Min Salary, Max Salary (Eg: Beautician, Two, Female, 2-3 yrs, 10000, 15000) ]</h5>
                <div class="form-group">
                     <label for="inputEmail" class="col-lg-2 ">Position Description*</label>
                     <div class="col-lg-10">

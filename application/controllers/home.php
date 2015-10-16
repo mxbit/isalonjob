@@ -24,8 +24,8 @@ class Home extends CI_Controller {
 	public function save_staffrequest()
 	{
 		$staff_data = array (
-                    'contact'        	     =>$this->input->post('cn_details'),
-                    'name'        	         =>$this->input->post('salon_name'),
+                    'contact_details'        =>$this->input->post('cn_details'),
+                    'name_salon'        	 =>$this->input->post('salon_name'),
                     'address'      			 =>$this->input->post('address'),
                     'business_type'      	 =>$this->input->post('business_type'),
                     'position_details'       =>$this->input->post('p_description'),

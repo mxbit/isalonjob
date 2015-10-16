@@ -59,7 +59,7 @@ window.isalon.base_url= '<?php echo base_url(); ?>';
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#top">HOME</a>
+                        <a class="page-scroll" href="<?php echo site_url('home/index')?>">HOME</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">STAFFING</a>

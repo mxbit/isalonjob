@@ -54,10 +54,12 @@
         <nav class="sidebar light">
             <ul>
                 <li class="title">Quick Links</li>
-                 <li class="stick bg-emerald"><a  href="<?php echo site_url('landing/maps')?>" ><i class="icon-new"></i>Add a Stylist</a></li>
-                 <li class="stick bg-emerald"><a  href="<?php echo site_url('jobs/job_list')?>" ><i class="icon-list"></i>Stylist List</a></li>
-                 <li class="stick bg-emerald"><a  href="<?php echo site_url('auth/logout')?>"><i class="icon-exit"></i>Logout</a></li>
-                 <li class="stick bg-emerald"><a  href="<?php echo site_url('landing/admin_home')?>" ><i class="icon-home"></i>Home</a></li>
+                <li class="stick bg-emerald"><a  href="<?php echo site_url('landing/maps')?>" ><i class="icon-new"></i>Add a Stylist</a></li>
+                <li class="stick bg-emerald"><a  href="<?php echo site_url('jobs/job_list')?>" ><i class="icon-list"></i>Stylist List</a></li>
+                <li class="stick bg-emerald"><a  href="<?php echo site_url('client_request/staff_requirement_list')?>" ><i class="icon-list"></i>Staff Requirement</a></li>
+                <li class="stick bg-emerald"><a  href="<?php echo site_url('client_request/job_request_list')?>" ><i class="icon-list"></i>Job Request List</a></li>
+                <li class="stick bg-emerald"><a  href="<?php echo site_url('auth/logout')?>"><i class="icon-exit"></i>Logout</a></li>
+                <li class="stick bg-emerald"><a  href="<?php echo site_url('landing/admin_home')?>" ><i class="icon-home"></i>Home</a></li>
 
             </ul>
         </nav>

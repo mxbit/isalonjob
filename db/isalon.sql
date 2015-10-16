@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2015 at 02:02 PM
+-- Generation Time: Oct 16, 2015 at 01:21 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -1154,7 +1154,7 @@ INSERT INTO `isalon_jobs` (`jobs_id`, `jobs_client`, `jobs_user`, `jobs_name`, `
 -- Table structure for table `isalon_job_info`
 --
 
-CREATE TABLE IF NOT EXISTS `isalon_job_resource` (
+CREATE TABLE IF NOT EXISTS `isalon_job_info` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `phone` varchar(50) NOT NULL,
@@ -1164,16 +1164,16 @@ CREATE TABLE IF NOT EXISTS `isalon_job_resource` (
   `prefered_type` varchar(20) NOT NULL,
   `salary` int(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=111 ;
 
 --
 -- Dumping data for table `isalon_job_info`
 --
 
-INSERT INTO `isalon_job_resource` (`id`, `name`, `phone`, `email`, `position`, `locality`, `prefered_type`, `salary`) VALUES
-(31, 'lavu', '1234567890', 'lavu@gmail.com', '3', 'tvm', '1', 20000),
-(32, 'jiya', '1234567890', 'jiya@gmail.com', '1', 'tvm', '1', 40000),
-(33, 'jiya', '1234567890', 'jiya@gmail.com', '1', 'tvm', '1', 40000);
+INSERT INTO `isalon_job_info` (`id`, `name`, `phone`, `email`, `position`, `locality`, `prefered_type`, `salary`) VALUES
+(108, 'surjith', '1234567890', 'achu@gmail.com', '2', 'peyad', '4', 2000),
+(109, 'lavanya', '8893888907', 'achu@gmail.com', '3', 'tvm', '3', 10000),
+(110, 'surjith', '8893888907', 'achu@gmail.com', '1', 'tgdrfg', '2', 2000);
 
 -- --------------------------------------------------------
 
@@ -1196,29 +1196,25 @@ CREATE TABLE IF NOT EXISTS `isalon_saved_jobs` (
 
 CREATE TABLE IF NOT EXISTS `isalon_staff_requirement` (
   `id` int(80) NOT NULL AUTO_INCREMENT,
-  `contact` varchar(200) NOT NULL,
-  `name` varchar(80) NOT NULL,
+  `contact_details` varchar(200) NOT NULL,
+  `name_salon` varchar(80) NOT NULL,
   `address` varchar(200) NOT NULL,
   `business_type` varchar(30) NOT NULL,
   `position_details` varchar(100) NOT NULL,
   `joining_date` varchar(30) NOT NULL,
   `additional_info` varchar(200) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=49 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=57 ;
 
 --
 -- Dumping data for table `isalon_staff_requirement`
 --
 
-INSERT INTO `isalon_staff_requirement` (`id`, `contact`, `name`, `address`, `business_type`, `position_details`, `joining_date`, `additional_info`) VALUES
-(41, 'jiya john', 'red rose', 'Ambalamukku, TvM', 'Unisex - WITHOUT Cross Gender ', 'Office staff', '30/10/2015', 'None'),
-(42, 'lavanya', '', '', 'Unisex - WITHOUT Cross Gender ', '', '', ''),
-(43, 'lavanya', '', '', 'Unisex - WITHOUT Cross Gender ', '', '', ''),
-(44, 'achui', 'fair', 'ambslamuk', 'Gents Only', 'dfgbdf', '27/10/2015', 'bbgb'),
-(45, 'achui', 'fair', 'ambslamuk', 'Gents Only', 'dfgbdf', '27/10/2015', 'bbgb'),
-(46, 'fgjfhjm', '', '', 'Gents Only', '', '', ''),
-(47, 'fgjfhjm', '', '', 'Gents Only', '', '', ''),
-(48, 'fgjfhjm', '', '', 'Gents Only', '', '', '');
+INSERT INTO `isalon_staff_requirement` (`id`, `contact_details`, `name_salon`, `address`, `business_type`, `position_details`, `joining_date`, `additional_info`) VALUES
+(53, 'lavanya', 'red rose', 'kaythamukku', 'Gents Only', 'staff', '26/11/2015', 'na'),
+(54, 'manju', 'manjusaloon', 'esaedtgjkklu,bhguyiuil', 'Ladies & Kids Only', 'Manager', '13/10/2015', 'quick'),
+(55, 'xcdvfgb', 'zxcv', 'zxcvbn', 'Ladies & Kids Only', 'xcfvgbhnm', '23/10/2015', 'cdfvbgnm'),
+(56, 'arun, bp nagar, peyad p.o.', 'arun saloon', 'saryjjjkj, hjgyk, sdrtw, cbvdfret, mlkopqafdsercvgdty', 'Unisex - WITHOUT Cross Gender ', 'sales man', '17/10/2015', 'asdjioikpopd,\r\nlplp[olp[lo[pde\r\nppopop[opoe\r\nqaqqisiowksoiwkopopolpso');
 
 -- --------------------------------------------------------
 
@@ -1249,7 +1245,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `phone`, `client_id`) VALUES
-(1, '127.0.0.1', 'administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '/ysm496ZvR/IeL8DRD6Vte', '1268889823', 1444369942, 1, 'Admin', 'istrator', '0', 0),
+(1, '127.0.0.1', 'administrator', '$2a$07$SeBknntpZror9uyftVopmu61qg0ms8Qv1yV6FG.kQOSM.9QhmTo36', '', 'admin@admin.com', '/ysm496ZvR/IeL8DRD6Vte', '1268889823', 1444986444, 1, 'Admin', 'istrator', '0', 0),
 (14, '', 'aneesh', '$1$cwOzZctA$e0qR4ufhFoEhM4R1YbNXd0', '', 'aneesh@test.com', NULL, '0', 1402748971, 1, 'text', 'test', '81234444', 1),
 (15, '', 'anandv', '$1$ASBz5dr7$xReaoKjKXw3kYhU/g4WuT.', '', 'tomeanand@gmail.com', NULL, '2014-10-09', 1441093325, 1, 'Anand', 'Kumar', '9845787370', 1),
 (16, '', 'anand', '$1$1VtXmAlG$616Dy9iA/YSI426Pzx3/D.', '', 'anand@mxbit.co.in', NULL, '2014-12-09', 1418117723, 1, 'Anand', 'Kumar C', '89989989', 2),
