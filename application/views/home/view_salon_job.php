@@ -51,13 +51,13 @@
         <div class="form-group">
            <p><label class="field">Position Desired*</label><br>
             <select name="position" id="position" class="form-control">
-                <option value="Beautician">Beautician</option>
-                <option value="Hair Stylist">Hair Stylist</option>
-                <option value="Spa Therapist">Spa Therapist</option>
-                <option value="Salon Manager">Salon Manager</option>
-                <option value="Receptionist">Receptionist</option>
-                <option value="Trainer">Trainer</option>
-                <option value="Other">Other</option>
+                <option value="1">Beautician</option>
+                <option value="2">Hair Stylist</option>
+                <option value="3">Spa Therapist</option>
+                <option value="4">Salon Manager</option>
+                <option value="5">Receptionist</option>
+                <option value="6">Trainer</option>
+                <option value="7">Other</option>
             </select></p>
         </div>
         <div class="form-group">

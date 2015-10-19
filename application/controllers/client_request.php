@@ -22,7 +22,11 @@ class client_request extends CI_Controller {
       $crud->set_table('isalon_job_info');    
       $crud->set_subject('Jobs Requests List');
 
-    
+    $crud->field_type('prefered_type','dropdown',
+            array( '1'  => 'Ladies Only', '2' => 'Gents Only', '3' => 'Unisex WITHOUT Cross Gender Services', '4' => 'Unisex WITH Cross Gender Services'));
+$crud->field_type('position','dropdown',
+            array( '1'  => 'Beautician', '2' => 'Hair Stylist', '3' => 'Spa Therapist', '4' => 'Salon Manager', '5'=> 'Receptionist', '6' => 'Trainer', '7' => 'Other'));
+
       $crud->display_as('id','Job Id');
       $crud->display_as('name','Name');
       $crud->display_as('phone','Phone');

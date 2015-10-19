@@ -62,16 +62,16 @@ window.isalon.base_url= '<?php echo base_url(); ?>';
                         <a class="page-scroll" href="<?php echo site_url('home/index')?>">HOME</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">STAFFING</a>
+                        <a class="page-scroll" href="<?php echo site_url('home/index')?>#about">STAFFING</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">SERVICES</a>
+                        <a class="page-scroll" href="<?php echo site_url('home/index')?>#services">SERVICES</a>
                     </li>
                     <li>
                         <a href="<?php echo site_url('home/job_request')?>">JOB</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">BUY/SELL</a>
+                        <a class="page-scroll" href="<?php echo site_url('home/index')?>#portfolio">BUY/SELL</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">CONTACT</a>

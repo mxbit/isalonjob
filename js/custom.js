@@ -138,8 +138,16 @@ $(".job_submit").click(function(){
                 else {
                         $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_jobrequest' , data: send_data }).done(function( msg ) {
                         if(msg=='1')
-                        console.log(JSON.stringify(values));
                         sweetAlert("Success!", "Your Job Request submitted Successfully.", "success");
+                        console.log(JSON.stringify(values));
+                        $('#name').val("");
+                        $('#mobile').val("");
+                        $('#email').val("");
+                        $('#position').val("");
+                        $('#Locality').val("");
+                        $('#salon_type').val("");
+                        $('#salary').val(""); 
+
                         });
                       $form.data('submitted', true);
                     }
