@@ -25,6 +25,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php print base_url()?>/assets/css/creative.css" type="text/css">
+    <script src="<?php echo base_url(); ?>js/global.js" type="text/javascript"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
