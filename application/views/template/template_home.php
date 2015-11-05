@@ -55,7 +55,7 @@ window.isalon.base_url= '<?php echo base_url(); ?>';
                <img src="<?php print base_url()?>assets/img/logo.png"  style="width:250px;padding:10px;" class="img-responsive">
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!-- Collect the nav links, forms, andd other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>

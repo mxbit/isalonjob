@@ -54,7 +54,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#top">HOME</a>
+                        <a class="page-scroll" href="<?php echo site_url('home/index')?>">HOME</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">STAFFING</a>
@@ -63,7 +63,7 @@
                         <a class="page-scroll" href="#services">SERVICES</a>
                     </li>
                     <li>
-                        <a href="<?php echo site_url('home/job_request')?>">JOB</a>
+                        <a class="page-scroll" href="#portfolio">JOB</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">BUY/SELL</a>
@@ -214,7 +214,7 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Are you looking for a job?</h2>
-                <a href="javascript:void(0)" class="btn btn-default btn-xl wow tada">Send your resume now!</a>
+                <a href="<?php echo site_url('home/job_request')?>" class="btn btn-default btn-xl wow tada">Send your resume now!</a>
             </div>
         </div>
     </aside>
