@@ -45,7 +45,7 @@ class Home extends CI_Controller {
         $this->email->initialize($config);
 
         $this->email->from('Hi@isalonjob.com');
-        $this->email->to('lavanya@mxbit.co.in');
+        $this->email->to('trainerprem@gmail.com');
         $this->email->subject('Staff Requirement Details');
         $data = $staff_data;
         $message = $this->load->view('mailes/view_message',$data,TRUE);
@@ -86,7 +86,7 @@ public function job_request()
         $this->load->library('email');
         $this->email->initialize($config);
         $this->email->from('Hi@isalonjob.com');
-        $this->email->to('lavanya@mxbit.co.in');
+        $this->email->to('trainerprem@gmail.com');
         $this->email->subject('Job Request Details');
         $data = $data;
         $message = $this->load->view('mailes/view_jobrequest_message',$data,TRUE);
