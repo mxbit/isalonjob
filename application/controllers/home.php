@@ -97,5 +97,16 @@ public function job_request()
     } 
     
 
+public function vacancy_list()
+    {
+ 
+    $vacancy_details        =  $this->job_model->get_jobs();
+    $data['details']        = $vacancy_details->result();
+
+    $data['content'] = 'home/view_job_vacancy';  
+    $this->load->view('template/template_home',$data);
+
+    }
+
 //@class ends
 }

@@ -35,9 +35,7 @@
     <![endif]-->
 <script src="<?php echo base_url(); ?>js/global.js" type="text/javascript"></script>
 
-<script >
-window.isalon.base_url= '<?php echo base_url(); ?>';
-</script>
+
 </head>
 
 <body id="page-top">

@@ -51,7 +51,7 @@ $(".btnSend").click(function(){
                       e.preventDefault();
                     } 
                     else {
-                        $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_staffrequest' , data: send_data }).done(function( msg ) {
+                        $.ajax({ type: "POST", url: window.isalon.base_url+'save_staffrequest' , data: send_data }).done(function( msg ) {
                         sweetAlert("Success!", "Your Staff Requirement Form submitted successfully.", "success"); 
                         console.log(JSON.stringify(values));
                         $('#cn_details').val("");
@@ -136,8 +136,7 @@ $(".job_submit").click(function(){
                       e.preventDefault();
                     } 
                 else {
-                        $.ajax({ type: "POST", url: window.isalon.base_url+'index.php/home/save_jobrequest' , data: send_data }).done(function( msg ) {
-                        if(msg=='1')
+                        $.ajax({ type: "POST", url: window.isalon.base_url+'save_jobrequest' , data: send_data }).done(function( msg ) {
                         sweetAlert("Success!", "Your Job Request submitted Successfully.", "success");
                         console.log(JSON.stringify(values));
                         $('#name').val("");

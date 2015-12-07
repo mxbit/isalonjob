@@ -33,7 +33,9 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<script >
+window.isalon.base_url= '<?php echo base_url(); ?>';
+</script>
 </head>
 
 <body id="page-top">
@@ -55,7 +57,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="<?php echo site_url('home/index')?>">HOME</a>
+                        <a class="page-scroll" href="#top">HOME</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">STAFFING</a>
@@ -216,6 +218,8 @@
             <div class="call-to-action">
                 <h2>Are you looking for a job?</h2>
                 <a href="<?php echo site_url('home/job_request')?>" class="btn btn-default btn-xl wow tada">Send your resume now!</a>
+                <a href="<?php echo site_url('home/vacancy_list')?>" class="btn btn-default btn-xl wow tada">Vacancy</a>
+
             </div>
         </div>
     </aside>

@@ -493,4 +493,21 @@ body {
 .text-primary{color: #652416;}
 #mainNav{    -webkit-box-shadow: 0 0px 10px 0 #000000;
     box-shadow: 0 0px 10px 0 #000000;}
-
+.form-group .list-style
+{
+  list-style-type: none;  
+}
+.heading_font
+{
+color: #151414;
+font-weight: bold;
+}
+.sub_heading
+{
+ 
+ font-size:15px   
+}
+.color_view
+{
+ color: #151414;   
+}

@@ -7,10 +7,11 @@ class Landing extends CI_Controller {
     if (!$this->ion_auth->logged_in()){
       redirect('auth', 'refresh');
     }  
-   
+
+    $this->load->library('grocery_CRUD');
     $this->load->model('places_model','places');
 
-    // $this->load->library('grocery_CRUD');
+
   }
 
   public function index(){  
@@ -27,6 +28,32 @@ class Landing extends CI_Controller {
     $data['content'] = 'maps/testmap';
     $data['metro'] = true;
     $this->load->view('admin/template_admin',$data);    
+  }
+
+  public function vacancy()  {
+    $crud = new grocery_CRUD();
+    $crud->set_table('isalon_vacancy');    
+    $crud->set_subject('Vacancy List'); 
+
+
+    $crud->display_as('id_vacancy','VacancyID');
+    $crud->display_as('position','Position');
+    $crud->display_as('location','Location');
+    $crud->display_as('salary_range','Salary_Range');
+    $crud->display_as('contact_info','Contact_Information');
+    $crud->display_as('start_date','Start Date');
+    $crud->display_as('close_date','Closing Date');
+    $crud->display_as('description','Description');
+    
+    $crud->required_fields('id_vacancy','position','location','salary_range','contact_info','start_date','close_date','description');
+
+    $crud->columns('id_vacancy','position','location','salary_range','contact_info','start_date','close_date','description');
+    
+    $data['gcrud'] = $crud->render();
+
+    $data['content'] = 'admin/view_vacancy_list';  
+    $this->load->view('admin/template_admin',$data);
+   
   }
 
 
